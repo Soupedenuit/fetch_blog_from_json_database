@@ -7,7 +7,7 @@ let url_text = 'http://192.168.0.12:8081//text.txt';
 // let url_json = 'https://soupedenuit.github.io/json-quotes/Random-Quotes.json';
 let url_json = 'https://vue-beta2.firebaseio.com/public/published/blog.json';
 
-if(!window.fetch) {
+if(window && !window.fetch) {
   populateTargetUsingXMLHttp('article')
   setInterval(function() {
     populateTargetUsingXMLHttp('article')
