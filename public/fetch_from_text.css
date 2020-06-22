@@ -1,0 +1,65 @@
+:root {
+  --backg1: hsl(212, 80%, 50%);
+  --backg2: hsl(212, 60%, 50%);
+  --backg3: hsl(212, 50%, 50%);
+  --button1:hsl(212, 78%, 42%); /* #1867c0; */
+  --color1: hsl(212, 38%, 85%);
+}
+
+body {
+  background-color: var(--backg2);
+  color: var(--color1);
+  font-family: 'Roboto', 'Open Sans', 'Poiret One';
+}
+
+h1, time {
+  text-align: center;
+}
+
+time {
+  display: block; /* time cannot align without display:block */
+  position: relative;
+  /* left: 50%;
+  transform: translateX(-50%); */
+}
+
+article {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 550px;
+  padding: 0 5px;
+  font-size: larger;
+}
+
+p {
+  /* text-justify: inter-word; */
+  /* text-justify: inter-character; */
+  text-justify: auto;
+  text-align: justify;
+}
+
+
+/**************************************
+ MEDIA QUERIES:
+**************************************/
+
+@media (orientation: landscape) {
+
+}
+
+@media (max-height: 770px) {
+
+}
+
+@media (max-width: 770px) {
+
+}
+
+@media (orientation: landscape) and (max-width: 770px) {
+
+}
+
+@media (orientation: landscape) and (max-height: 770px) {
+
+}
