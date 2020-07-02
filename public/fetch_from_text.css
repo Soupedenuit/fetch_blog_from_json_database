@@ -2,12 +2,14 @@
   --backg1: hsl(212, 80%, 50%);
   --backg2: hsl(212, 60%, 50%);
   --backg3: hsl(212, 50%, 50%);
+  --backg4: hsl(219, 79%, 66%); /*cornflowerblue */
   --button1:hsl(212, 78%, 42%); /* #1867c0; */
   --color1: hsl(212, 38%, 85%);
 }
 
 body {
-  background-color: var(--backg2);
+  /* background-color: var(--backg2); */
+  background-color: var(--backg4);
   color: var(--color1);
   font-family: 'Roboto', 'Open Sans', 'Poiret One';
 }
@@ -37,6 +39,19 @@ p {
   /* text-justify: inter-character; */
   text-justify: auto;
   text-align: justify;
+}
+
+code {
+  display: inline-block;
+  background-color: #85b1ff;
+  color: #2e456d;
+  white-space: pre-wrap;
+  font-size: 85%;
+  font-weight: 500;
+  margin-left: 10px;
+  padding: 5px;
+  border-radius: 3px;
+  /* this works because of !important */
 }
 
 

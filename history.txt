@@ -1,0 +1,45 @@
+cd..
+cd "Github Practice"
+ls -a
+dir
+git clone git@github.com:Soupedenuit/fetch_blog_from_json_database.git
+git clone https://github.com/Soupedenuit/fetch_blog_from_json_database.git
+cd ..
+cd test
+git clone https://github.com/Soupedenuit/fetch_blog_from_json_database.git
+dir
+cd..
+delete test
+del test
+y
+cd test
+cd..
+del test
+Y
+cd test
+help
+help del
+help dir
+dir/a/h
+dir/a
+dir/a h
+dir/a:h
+cd..
+dir/o:d
+dir/w/o:d
+dir/a:s
+cd "Github Practice"
+dir
+dir/a:h
+dir/a:s
+git remote -v
+cls
+git remote -v
+git status
+git init
+git status
+dir
+doskey /History
+help doskey
+doskey/h
+doskey /HISTORY > history.txt
