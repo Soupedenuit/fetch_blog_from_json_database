@@ -4,7 +4,7 @@
   --backg3: hsl(212, 50%, 50%);
   --button1:hsl(212, 78%, 42%); /* #1867c0; */
   --color1: hsl(212, 38%, 85%);
-  --color2: hsl(212, 38%, 85%);
+  --color2: hsl(212, 48%, 85%);
   --color3: #bae67e;
   --color4: #ffcc66;
   --color5: #c3a6ff;
@@ -15,15 +15,28 @@
 body {
   /* background-color: var(--backg2); */
   background-color: var(--backg4);
-  /* color: var(--color1); */
-  color: var(--color5);
+  /* width: calc(100% - 17px); */
+  color: var(--color2);
   font-family: 'Roboto', 'Open Sans', 'Poiret One';
-  overflow-wrap: normal;
+  padding: 0 10px;
+  /* overflow-x: hidden;
+  overflow-y: scroll; */
+}
+
+/* to allow overflow properties to work everywhere as they do not work on <body> on mobile */
+#body-wrapper {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100 vw;
+  min-height: 100 vh;
+  overflow-x: hidden;
 }
 
 h1, time {
   text-align: center;
-  color: var(--color4);
+  color: var(--color5);
 }
 
 time {
@@ -38,21 +51,19 @@ article {
   left: 50%;
   transform: translateX(-50%);
   max-width: 600px;
-  margin: 0 10px 5px 10px;
-  padding: 0 10px;
+  /* margin: 0 10px 5px 10px;
+  padding: 0 10px; */
   font-size: 1.1em;
 }
 
-p {
-  /* text-justify: inter-word; */
-  /* text-justify: inter-character; */
-  /* text-justify: auto; */
-  text-align: left;
-  padding-right: 10px;
-}
+/* p {
+  text-justify: inter-word;
+  text-justify: inter-character;
+  text-justify: auto;
+} */
 
-ul, li {
-  padding-right: 10px;
+ul {
+padding-inline-start: 20px; /*user-agent default is 40px */
 }
 
 a {
@@ -60,14 +71,14 @@ a {
 }
 
 code {
-  color: var(--color6);
-  font-size: 1.1em;
-  margin-left: 3px;
+  color: var(--color4);
+  font-size: 1.15em;
+  margin-left: 2px;
   margin-right: 3px;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 3px;
+  padding-right: 3px;
+  line-break: auto;
 }
-
 
 
 

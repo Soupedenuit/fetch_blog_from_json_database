@@ -2,20 +2,41 @@
   --backg1: hsl(212, 80%, 50%);
   --backg2: hsl(212, 60%, 50%);
   --backg3: hsl(212, 50%, 50%);
-  --backg4: hsl(219, 79%, 66%); /*cornflowerblue */
   --button1:hsl(212, 78%, 42%); /* #1867c0; */
   --color1: hsl(212, 38%, 85%);
+  --color2: hsl(212, 48%, 85%);
+  --color3: #bae67e;
+  --color4: #ffcc66;
+  --color5: #c3a6ff;
+  --color6: #5ccfe6;
+  --backg4: #2f3b54;
 }
 
 body {
   /* background-color: var(--backg2); */
   background-color: var(--backg4);
-  color: var(--color1);
+  /* width: calc(100% - 17px); */
+  color: var(--color2);
   font-family: 'Roboto', 'Open Sans', 'Poiret One';
+  padding: 0 10px;
+  /* overflow-x: hidden;
+  overflow-y: scroll; */
+}
+
+/* to allow overflow properties to work everywhere as they do not work on <body> on mobile */
+#body-wrapper {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100 vw;
+  min-height: 100 vh;
+  overflow-x: hidden;
 }
 
 h1, time {
   text-align: center;
+  color: var(--color5);
 }
 
 time {
@@ -29,30 +50,36 @@ article {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  max-width: 550px;
-  padding: 0 5px;
-  font-size: larger;
+  max-width: 600px;
+  /* margin: 0 10px 5px 10px;
+  padding: 0 10px; */
+  font-size: 1.1em;
 }
 
-p {
-  /* text-justify: inter-word; */
-  /* text-justify: inter-character; */
+/* p {
+  text-justify: inter-word;
+  text-justify: inter-character;
   text-justify: auto;
-  text-align: justify;
+} */
+
+ul {
+padding-inline-start: 20px; /*user-agent default is 40px */
+}
+
+a {
+  color: var(--color3);
 }
 
 code {
-  display: inline-block;
-  background-color: #85b1ff;
-  color: #2e456d;
-  white-space: pre-wrap;
-  font-size: 85%;
-  font-weight: 500;
-  margin-left: 10px;
-  padding: 5px;
-  border-radius: 3px;
-  /* this works because of !important */
+  color: var(--color4);
+  font-size: 1.15em;
+  margin-left: 2px;
+  margin-right: 3px;
+  padding-left: 3px;
+  padding-right: 3px;
+  line-break: auto;
 }
+
 
 
 /**************************************

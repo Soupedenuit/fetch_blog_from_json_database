@@ -10,17 +10,24 @@
   <meta name="author" content="Tony Whomever" />
   <meta name="description" content="">
   <meta name="keywords" content="">
-  <!-- <link rel="icon" type="image/png" href="xxIMAGE.png" /> -->
+  <!-- to prevent failed favicon requests from server: -->
+  <link rel="icon" href="data:,">
+
 </head>
 
 <body>
 
-<h1>Fetching From A Text File</h1>
+<!-- to allow overflow properties to work everywhere as they do not work on <body> on mobile -->
+<div id="body-wrapper">
+  
+  <h1>Fetching From A Text File</h1>
 
-<main>
-  <article></article>
-  <time></time>
-</main>
+  <main>
+    <article></article>
+    <time></time>
+  </main>
+
+</div>
 
 
 
