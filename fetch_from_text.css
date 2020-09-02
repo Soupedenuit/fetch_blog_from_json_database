@@ -34,6 +34,13 @@ body {
   overflow-x: hidden;
 }
 
+#noscript-wrapper {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  color: red;
+}
+
 h1, time {
   text-align: center;
   color: var(--color5);

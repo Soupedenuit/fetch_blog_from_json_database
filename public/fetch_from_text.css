@@ -19,8 +19,8 @@ body {
   color: var(--color2);
   font-family: 'Roboto', 'Open Sans', 'Poiret One';
   padding: 0 10px;
-  /* overflow-x: hidden;
-  overflow-y: scroll; */
+  overflow-x: hidden;
+  /* overflow-y: scroll; */
 }
 
 /* to allow overflow properties to work everywhere as they do not work on <body> on mobile */
@@ -29,10 +29,33 @@ body {
   position: relative;
   margin: 0;
   padding: 0;
-  width: 100 vw;
-  min-height: 100 vh;
+  width: 100vw;
+  min-height: 100vh;
   overflow-x: hidden;
 }
+
+noscript {
+  position: fixed;
+  /* display: flex; */
+  width: 100vw;
+  /* height: 100vh; */
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* justify-content: center;
+  align-items: center; */
+}
+
+noscript p {
+  position: relative;
+  max-width: 95vw;
+  top: -100px;
+}
+
+/* #noscript-wrapper p {
+  width: 100vw;
+} */
 
 h1, time {
   text-align: center;
